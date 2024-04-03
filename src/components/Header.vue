@@ -1,6 +1,7 @@
 <script setup>
 
 import Button from "@/components/icons/Button.vue";
+import Search from "@/components/icons/Search.vue";
 </script>
 
 <template>
@@ -18,26 +19,35 @@ import Button from "@/components/icons/Button.vue";
         <li><a href="#">CONTACT</a></li>
       </ul>
       <Search/>
-      <Button className="btn-icon-card"/>
+      <Button class-name="btn-icon-card" btn-font-size="50"/>
     </nav>
   </div>
 </template>
 
 <style scoped>
 .nav {
+ margin: 0 auto;
+  box-sizing: border-box;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 1440px;
   height: 72px;
-  box-shadow: 12px 0 #CFCFCF40;
+ box-shadow: 0 1px 1px 0 ;
+  padding: 0 10px;
   .nav_list{
     display: flex;
     list-style: none;
-    a{
-      text-decoration: none;
-      color:#70737C ;
-      font-weight: 400px;
+    li{
+      padding: 2px 10px;
+      border-right: 1px solid #EFEFEF;
+      &:nth-last-child(-n+1){
+        border: none;
+      }
+      a{
+        text-decoration: none;
+        color:#70737C ;
+        font-weight: 400;
+      }
     }
   }
 }

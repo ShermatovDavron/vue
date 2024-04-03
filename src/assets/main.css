@@ -2,3 +2,6 @@
     width: 1660px;
     margin: 0 auto;
 }
+body{
+    box-sizing: border-box;
+}
