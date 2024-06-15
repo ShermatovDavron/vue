@@ -29,7 +29,7 @@ const priceOld = ref(15.56)
   box-sizing: border-box;
   background-color:#EAF1EB ;
   background-image: url("@/assets/img/seedra.png");
-  //background-position-x: right;
+  background-position-x: right;
   background-position: center right;
   padding: 50px 100px;
   background-repeat: no-repeat;
